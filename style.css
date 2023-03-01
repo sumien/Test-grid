@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(14, 14, 14);
+    text-align: center;
+    
+}
+
+@media screen and (min-width:1025px) {
+
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: 1fr, 1fr, 8fr, 2fr, 2fr, 3fr;
+        grid-template-areas:
+        
+            "menu menu menu menu"
+            "titre titre titre titre"
+            "contenu contenu contenu contenu"
+            "article1 article1 article2 article2"
+            "image1 image2 image2 image3"
+            "footer footer footer footer";
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:577px) {
+
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: 1fr, 1fr, 8fr, 2fr, 2fr, 3fr, 3fr, 3fr, 1fr;
+        grid-template-areas:
+            "menu menu menu menu"
+            "titre titre titre titre"
+            "contenu contenu contenu article1"
+            "contenu contenu contenu article1"
+            "contenu contenu contenu article2"
+            "contenu contenu contenu article2"
+            "image1 image2 image2 image3"
+            "footer footer footer footer";
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr, 8fr, 2fr, 2fr, 3fr, 3fr, 3fr, 1fr;
+        grid-template-areas:
+            "menu "
+            "titre"
+            "contenu "
+            "article1"
+            "article2"
+            "image1"
+            "image2"
+            "image3"
+            "footer";
+    }
+}
+
+.menu {
+    background-color: blue;
+    grid-area: menu;
+}
+
+.titre {
+    background-color: aquamarine;
+    grid-area: titre;
+    font-size: 20px;
+}
+
+.contenu {
+    background-color: blueviolet;
+    grid-area: contenu;
+}
+
+.article1 {
+    background-color: bisque;
+    grid-area: article1;
+}
+
+.article2 {
+    background-color: brown;
+    grid-area: article2;
+}
+
+.image1 {
+    background-color: darkgreen;
+    grid-area: image1;
+    border-radius:10%;  
+}
+
+.image2 {
+    background-color: darkblue;
+    grid-area: image2;
+    border-radius:10%;  
+}
+
+.image3 {
+    background-color: darksalmon;
+    grid-area: image3;
+    border-radius:10%;
+}
+
+.footer {
+    background-color: darkseagreen;
+    grid-area: footer; 
+}
+.page grid{
+    background-color: darkseagreen;
+    grid-area: footer;
+}
